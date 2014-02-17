@@ -1,0 +1,8 @@
+bin
+!bin/data/
+bin/data/sound/FluidR3_GM.sf2
+
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+.DS_Store
