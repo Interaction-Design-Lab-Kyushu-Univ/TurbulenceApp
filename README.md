@@ -3,30 +3,33 @@ TurbulenceApp
 
 Turbulenceの投影側アプリです。Macでのみ動作確認しています。
 
-**コンパイル前に用意するべきもの**
+**事前に用意するべきもの**
+
+- openFrameworks 0.8.0
+
+以下の2つのライブラリは、Homebrewを使うなどして自前でビルドしておいてください。
 
 - Boost
 - FluidSynth
 
-Homebrewを使うなどして自前でビルどしておいてください。
+以下の3つのアドオンをダウンロードしてoFのaddonsに入れてください。
 
 - ofxLibwebsocket
 - ofxDome
 - ofxBox2d
 
-それぞれダウンロードしてoFのaddonsに入れてください。
+最後の一点はファイル容量が大きすぎてGitHubに乗らなかったファイルです。
+ネット上のどこかにあるので、ダウンロードしてbin/data/sound/の中に入れてください。
 
 - FluidR3_GM.sf2
 
-これはファイル容量が大きすぎてGitHubに乗りませんでした。
-ネット上のどこかにあるので、ダウンロードしてbin/data/sound/の中に入れてください。
+**ビルドの仕方**
 
-**コンパイルの仕方**
+ファイルを全部用意できたら、次の手順を実行してください。
 
 1. このリポジトリの内容をoF0.8の2階層下のディレクトリ（myApps/Turbulence など）に入れる。
-2. FluidR3_GM.sf2をbin/data/sound/に入れる
-3. Xcodeを開いてBoostとFluidSynthに適切なパスを通す。
-4. Buildを実行。
+2. Xcodeを開いてBoostとFluidSynthに適切なパスを通す。
+3. Buildを実行。
 
 BoostとFluidSynthは何も考えずに作るとDLLになります。
 そのままでは他の環境で動かないので、他の環境で実行するときは依存しているライブラリをappの中に入れる必要があります。
@@ -34,7 +37,7 @@ BoostとFluidSynthは何も考えずに作るとDLLになります。
 
 **アイテムの差し替え**
 
-アイテムを差し替えるだけならコンパイルし直す必要はありません。
+アイテムを差し替えるだけならビルドし直す必要はありません。
 bin/data/settings.xmlを見てください。
 \<flyingobjects>〜\</flyingobjects>の中身がアイテムです。
 アイテムIDは上から順に0, 1, 2... と対応づけられます。
