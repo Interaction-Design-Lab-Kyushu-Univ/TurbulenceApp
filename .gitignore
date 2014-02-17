@@ -1,6 +1,7 @@
-bin
-!bin/data/
+bin/*
+!bin/data/*
 bin/data/sound/FluidR3_GM.sf2
+bin/data/mesh.txt
 
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
