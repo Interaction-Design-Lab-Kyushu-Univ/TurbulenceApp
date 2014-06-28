@@ -7,10 +7,15 @@ Turbulenceの投影側アプリです。Macでのみ動作確認しています�
 
 - openFrameworks 0.8.0
 
-以下の2つのライブラリは、Homebrewを使うなどして自前でビルドしておいてください。
+以下の2つのライブラリは、MacPortsを使うなどして自前でビルドしておいてください。
 
 - Boost
 - FluidSynth
+
+```
+sudp port install boost +universal
+sudo port install fluidsynth +universal
+```
 
 以下の3つのアドオンをダウンロードしてoFのaddonsに入れてください。
 
