@@ -13,7 +13,7 @@ Turbulenceの投影側アプリです。Macでのみ動作確認しています�
 - FluidSynth
 
 ```
-sudp port install boost +universal
+sudo port install boost +universal
 sudo port install fluidsynth +universal
 ```
 
